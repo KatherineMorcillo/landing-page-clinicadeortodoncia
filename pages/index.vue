@@ -23,11 +23,68 @@
     </section>
 
     <section id="servicios" class="services-section">
-      <h1>Nuestros Servicios</h1>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
+      <h1 class="flex justify-center text-5xl">Nuestros Servicios</h1>
+      <div class="items-center grid grid-cols-3 gap-4 p-10">
+        <div class="services-div">
+          <img width="50" height="50" src="/img/icons/diente.png" />
+          <h1>Servicio 1</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            incidunt repellendus sequi, animi dolorem quam. Aliquid, enim!
+            Laborum, praesentium earum eaque dolore a voluptate, illum, repellat
+            velit quo quae exercitationem.
+          </p>
+        </div>
+        <div class="services-div">
+          <img width="50" height="50" src="/img/icons/diente.png" />
+          <h1>Servicio 1</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            incidunt repellendus sequi, animi dolorem quam. Aliquid, enim!
+            Laborum, praesentium earum eaque dolore a voluptate, illum, repellat
+            velit quo quae exercitationem.
+          </p>
+        </div>
+        <div class="services-div">
+          <img width="50" height="50" src="/img/icons/diente.png" />
+          <h1>Servicio 1</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            incidunt repellendus sequi, animi dolorem quam. Aliquid, enim!
+            Laborum, praesentium earum eaque dolore a voluptate, illum, repellat
+            velit quo quae exercitationem.
+          </p>
+        </div>
+        <div class="services-div">
+          <img width="50" height="50" src="/img/icons/diente.png" />
+          <h1>Servicio 1</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            incidunt repellendus sequi, animi dolorem quam. Aliquid, enim!
+            Laborum, praesentium earum eaque dolore a voluptate, illum, repellat
+            velit quo quae exercitationem.
+          </p>
+        </div>
+        <div class="services-div">
+          <img width="50" height="50" src="/img/icons/diente.png" />
+          <h1>Servicio 1</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            incidunt repellendus sequi, animi dolorem quam. Aliquid, enim!
+            Laborum, praesentium earum eaque dolore a voluptate, illum, repellat
+            velit quo quae exercitationem.
+          </p>
+        </div>
+        <div class="services-div">
+          <img width="50" height="50" src="/img/icons/diente.png" />
+          <h1>Servicio 1</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            incidunt repellendus sequi, animi dolorem quam. Aliquid, enim!
+            Laborum, praesentium earum eaque dolore a voluptate, illum, repellat
+            velit quo quae exercitationem.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -43,6 +100,9 @@
   @apply flex h-screen pt-[127px];
 }
 .services-section {
-  @apply flex h-screen;
+  @apply justify-center items-center py-20;
+}
+.services-div {
+  @apply flex flex-col items-center hover:border p-10;
 }
 </style>
