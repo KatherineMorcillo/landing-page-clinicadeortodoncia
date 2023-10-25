@@ -13,7 +13,7 @@ export default {
       colors: {
         primary: "#0ea8dc",
         success: "#5ea88b",
-        info: "#e5f6f5",
+        info: "#bce8e7",
       },
     },
     fontFamily: {

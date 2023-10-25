@@ -1,14 +1,14 @@
 <template>
   <nav
-    class="flex items-center justify-between px-16 py-6 bg-white p-2 max-lg:px-4"
+    class="fixed w-full flex items-center justify-between px-16 pt-6 bg-white p-2 max-lg:px-4"
   >
     <!-- Imagen de logo  -->
     <nuxt-link to="/">
       <img
         width="100"
         height="100"
-        class="object-cover"
-        src="/img/logo.png"
+        class="object-contain"
+        src="/img/logo1.png"
         alt=""
       />
     </nuxt-link>
@@ -21,14 +21,12 @@
       <button class="close-responsive hidden" @click="abrirMenu">
         <img width="50" heigth="50" src="/img/icons/cerrar_menu.png" />
       </button>
-      <nuxt-link class="subnavlink" to="/ortodoncia">Ortodoncia</nuxt-link>
-      <nuxt-link class="subnavlink" to="/blanqueamiento"
-        >Blanqueamiento</nuxt-link
-      >
-      <nuxt-link class="subnavlink" to="/implantes">Implantes</nuxt-link>
-      <nuxt-link class="subnavlink" to="/servicios">Servicios</nuxt-link>
-      <nuxt-link class="subnavlink" to="/blog">Blog</nuxt-link>
-      <nuxt-link class="subnavlink" to="/ubicacion">Ubicación</nuxt-link>
+      <nuxt-link class="subnavlink" to="#nosotros">Nosotros</nuxt-link>
+      <nuxt-link class="subnavlink" to="#servicios">Servicios</nuxt-link>
+      <nuxt-link class="subnavlink" to="#testimonios">Testimonios</nuxt-link>
+      <nuxt-link class="subnavlink" to="/servicios">Citas</nuxt-link>
+      <nuxt-link class="subnavlink" to="/blog">Ubicación</nuxt-link>
+      <nuxt-link class="subnavlink" to="/ubicacion">Contacto</nuxt-link>
     </div>
 
     <!-- Botón navegador para pantallas pequeñas (adaptación de la imagen sin pixelar:object-cover-->
@@ -49,34 +47,35 @@
     <a
       href="https://api.whatsapp.com/send?phone=573137256806"
       target="_blank"
-      class="bg-primary text-white rounded-2xl hover: px-4 py-3 max-lg:hidden"
-      >Pedir cita</a
+      class="flex items-center border gap-4 text-[#4a5568] uppercase rounded-full p-2 max-lg:hidden"
     >
+      <img
+        width="30"
+        height="30"
+        class="max-lg:hidden"
+        src="/img/icons/whatsapp.png"
+      />
+      Pedir cita
+    </a>
   </nav>
 </template>
 <script setup>
 const openMenu = ref(false);
-const widthWindows = ref(null)
+const widthWindows = ref(null);
 const abrirMenu = () => {
   openMenu.value = !openMenu.value;
 };
 
 onMounted(() => {
-  window.addEventListener('resize', function () {
-  widthWindows.value = window.innerWidth
-})
-})
-
+  window.addEventListener("resize", function () {
+    widthWindows.value = window.innerWidth;
+  });
+});
 </script>
 <style lang="scss">
-.subnavlink:hover {
-  text-decoration: underline;
+.subnavlink {
+  @apply uppercase text-[#4a5568];
 }
-
-.router-link-active.subnavlink {
-  text-decoration: underline;
-}
-
 .menu-responsive {
   position: fixed;
   top: 0;
@@ -95,5 +94,4 @@ onMounted(() => {
     right: 1rem;
   }
 }
-
 </style>

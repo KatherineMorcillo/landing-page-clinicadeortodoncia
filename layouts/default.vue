@@ -1,7 +1,6 @@
 <template>
   <div>
     <Navbar />
-    <header></header>
     <main>
       <slot></slot>
     </main>
