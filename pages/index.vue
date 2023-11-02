@@ -13,7 +13,7 @@
           nisi molestiae.
         </p>
 
-        <a class="flex items-center border rounded-full p-4 uppercase">
+        <a href="/" class="flex items-center border rounded-full p-4 uppercase">
           Pide tu valoración gratuita
         </a>
       </div>
@@ -88,7 +88,45 @@
       </div>
     </section>
 
-    <section id="testimonios"></section>
+    <section id="testimonios" class="testimonial-section">
+      <HomeTestimonial
+        title="Testimonio 1"
+        paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            incidunt repellendus sequi, animi dolorem quam. Aliquid, enim!
+            Laborum, praesentium earum eaque dolore a voluptate, illum, repellat
+            velit quo quae exercitationem."
+        img="/img/testimonio1.png"
+      />
+      <div class="flex justify-center items-center gap-4 p-6">
+        <div class="w-1/4">
+          <img src="/img/testimonio1.png" alt="" />
+        </div>
+        <div class="w-1/2">
+          <h1 class="flex justify-center text-6xl">Testimonio 2</h1>
+          <p class="flex justify-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            incidunt repellendus sequi, animi dolorem quam. Aliquid, enim!
+            Laborum, praesentium earum eaque dolore a voluptate, illum, repellat
+            velit quo quae exercitationem." img="/img/testimonio1.png
+          </p>
+        </div>
+      </div>
+
+      <HomeTestimonial
+        title="Testimonio 3"
+        paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            incidunt repellendus sequi, animi dolorem quam. Aliquid, enim!
+            Laborum, praesentium earum eaque dolore a voluptate, illum, repellat
+            velit quo quae exercitationem."
+        img="/img/testimonio1.png"
+      />
+      <a
+        href="/"
+        class="flex justify-center items-center border rounded-full p-4 uppercase w-1/4"
+      >
+        Ver más testimonios
+      </a>
+    </section>
     <section id="citas"></section>
     <section id="ubicacion"></section>
     <section id="contacto"></section>
@@ -104,5 +142,8 @@
 }
 .services-div {
   @apply flex flex-col items-center hover:border p-10;
+}
+.testimonial-section {
+  @apply justify-center items-center p-10;
 }
 </style>
