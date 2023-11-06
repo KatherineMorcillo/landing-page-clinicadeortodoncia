@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- Nosotros -->
     <section id="nosotros" class="about-section">
       <div class="flex flex-col gap-6 px-10 justify-center items-center w-1/2">
         <h1 class="text-5xl">
@@ -21,6 +22,7 @@
         <img class="w-full object-contain" src="/img/sonrisa.png" alt="" />
       </div>
     </section>
+    <!-- Servicios -->
 
     <section id="servicios" class="services-section">
       <h1 class="flex justify-center text-5xl">Nuestros Servicios</h1>
@@ -87,6 +89,7 @@
         </div>
       </div>
     </section>
+    <!-- Testimonios-->
 
     <section id="testimonios" class="testimonial-section">
       <HomeTestimonial
@@ -127,7 +130,86 @@
         Ver más testimonios
       </a>
     </section>
-    <section id="citas"></section>
+
+    <!-- Contacto y citas -->
+
+    <section id="citas" class="contact-section">
+      <!-- Titulo de la sección -->
+      <h1 class="flex justify-center text-5xl">Citas y contacto</h1>
+      <!---->
+      <div class="flex w-full mt-4">
+        <!-- Mensaje para contactar para citas -->
+        <div class="p-6 w-1/2">
+          <h1 class="justify-center text-3xl mb-11">
+            Déjanos tus datos para contactarte
+          </h1>
+          <form action="">
+            <div class="flex flex-col justify-center items center gap-3">
+              <div class="w-full mx-3">
+                <input
+                  type="text"
+                  class="input-form"
+                  placeholder="correo electrónico"
+                />
+              </div>
+              <div class="w-full mx-3">
+                <input type="text" class="input-form" placeholder="Nombre" />
+              </div>
+              <div class="w-full mx-3">
+                <input type="text" class="input-form" placeholder="Telefono" />
+              </div>
+              <div>
+                <textarea
+                  class="w-full mx-3 input-form"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Mensaje"
+                ></textarea>
+              </div>
+            </div>
+          </form>
+          <div class="justify-center items-center p-6">
+            <button class="button">Enviar mensaje</button>
+          </div>
+        </div>
+        <!-- Información de contacto -->
+        <div class="justify-center items-center w-1/2 p-6 space-y-4">
+          <h1 class="text-start text-3xl mb-11">Contáctanos</h1>
+          <div class="flex justify-start gap-4">
+            <img
+              width="40"
+              height="40"
+              class="object-contain rounded-full"
+              src="/img/icons/gps.png"
+              alt=""
+            />
+            <h1 class="">Bogotá, D.C</h1>
+          </div>
+          <div class="flex justify-start gap-4">
+            <img
+              width="40"
+              height="40"
+              class="object-contain rounded-full"
+              src="/img/icons/correo.png"
+              alt=""
+            />
+            <h1>correo@gmail.com</h1>
+          </div>
+          <div class="flex justify-start gap-4">
+            <img
+              width="40"
+              height="40"
+              class="object-contain rounded-full"
+              src="/img/icons/telefono.png"
+              alt=""
+            />
+            <h1>31212341234</h1>
+            <h1>31212341234</h1>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="ubicacion"></section>
     <section id="contacto"></section>
   </div>
@@ -145,5 +227,18 @@
 }
 .testimonial-section {
   @apply justify-center items-center p-10;
+}
+.contact-section {
+  @apply flex flex-col justify-center items-center p-10;
+  .input-form {
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 40px;
+  }
+  .button {
+    padding: 10px 20px;
+    border-radius: 40px;
+    background: #0ea8dc;
+  }
 }
 </style>

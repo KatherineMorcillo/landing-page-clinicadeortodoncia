@@ -24,9 +24,9 @@
       <nuxt-link class="subnavlink" to="#nosotros">Nosotros</nuxt-link>
       <nuxt-link class="subnavlink" to="#servicios">Servicios</nuxt-link>
       <nuxt-link class="subnavlink" to="#testimonios">Testimonios</nuxt-link>
-      <nuxt-link class="subnavlink" to="/servicios">Citas</nuxt-link>
-      <nuxt-link class="subnavlink" to="/blog">Ubicación</nuxt-link>
-      <nuxt-link class="subnavlink" to="/ubicacion">Contacto</nuxt-link>
+      <nuxt-link class="subnavlink" to="#citas">Citas</nuxt-link>
+      <nuxt-link class="subnavlink" to="#ubicación">Ubicación</nuxt-link>
+      <nuxt-link class="subnavlink" to="#contacto">Contacto</nuxt-link>
     </div>
 
     <!-- Botón navegador para pantallas pequeñas (adaptación de la imagen sin pixelar:object-cover-->
