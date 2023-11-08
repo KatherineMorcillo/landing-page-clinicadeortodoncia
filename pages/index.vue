@@ -223,6 +223,32 @@
         ></iframe>
       </div>
     </section>
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact-section">
+      <div class="flex justify-center items-center">
+        <img
+          width="200"
+          height="200"
+          class="object-contain"
+          src="/img/facebook (1).png"
+          alt=""
+        />
+        <img
+          width="200"
+          height="200"
+          class="object-contain"
+          src="/img/instagram.png"
+          alt=""
+        />
+        <img
+          width="200"
+          height="200"
+          class="object-contain"
+          src="/img/whatsapp (1).png"
+          alt=""
+        />
+      </div>
+    </section>
   </div>
 </template>
 
@@ -250,6 +276,8 @@
     padding: 10px 20px;
     border-radius: 40px;
     background: #0ea8dc;
+  }
+  .img {
   }
 }
 .ubication-section {
