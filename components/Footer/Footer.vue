@@ -1,39 +1,45 @@
 <template>
-  <footer class="flex flex-col justify-center mx-auto bg-white">
-    <div class="flex justify-center gap-5 bg-white p-6">
-      <img width="100" height="100" alt="" src="/img/logo.png" />
-      <h3 class="p-4">Clinica odontologica</h3>
+  <footer class="flex justify-center items-center mx-auto gap-4">
+    <div class="footer">
+      <img
+        width="100"
+        height="100"
+        class="object-contain"
+        src="/img/logo1.png"
+        alt=""
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maiores
+        dolorem provident quasi quis autem tempore inventore voluptate impedit
+        consequuntur. Nostrum ut ex distinctio culpa vero numquam pariatur
+        repudiandae nisi!
+      </p>
     </div>
-    <div class="grid grid-cols-4 p-6">
-      <div class="">
-        <h3>Servicios</h3>
-        <li>
-          <nuxt-link to="/"> Ortodoncia</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/">Blanqueamiento</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/">Implantes</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/">Otros Servicios</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/">Blog</nuxt-link>
-        </li>
-      </div>
-      <div class="">
-        <h3>Ubicación</h3>
-      </div>
-
-      <div class="">
-        <h3>Contactanos</h3>
-      </div>
-
-      <div class="">
-        <h3>Redes Sociales</h3>
+    <div class="footer">
+      <h1>Nuestra Misión</h1>
+      <h1>Nuestra Visión</h1>
+      <h1>Nuestra Valores</h1>
+    </div>
+    <div class="footer">
+      <h1>Nosotros</h1>
+      <h1>Servicios</h1>
+      <h1>Testimonios</h1>
+      <h1>Citas</h1>
+      <h1>Ubicación</h1>
+      <h1>Contacto</h1>
+    </div>
+    <div class="footer">
+      <h1>Encuentranos en :</h1>
+      <div class="flex flex-col justify-center items-center gap-4">
+        <img width="35" height="35" src="/img/icons/facebook.png" alt="" />
+        <img width="35" height="35" src="/img/icons/instagram (1).png" alt="" />
+        <img width="35" height="35" src="/img/icons/whatsapp.png" alt="" />
       </div>
     </div>
   </footer>
 </template>
+<style lang="scss">
+.footer {
+  @apply flex flex-col justify-center items-center w-1/4 py-20 mx-10 gap-4;
+}
+</style>

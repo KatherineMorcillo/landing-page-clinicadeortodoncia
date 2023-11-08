@@ -210,6 +210,32 @@
         </div>
       </div>
     </section>
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact-section">
+      <div class="flex justify-center items-center gap-6">
+        <img
+          width="300"
+          height="100"
+          class="object-contain"
+          src="/img/facebook (1).png"
+          alt=""
+        />
+        <img
+          width="300"
+          height="100"
+          class="object-contain"
+          src="/img/instagram.png"
+          alt=""
+        />
+        <img
+          width="300"
+          height="100"
+          class="object-contain"
+          src="/img/whatsapp (1).png"
+          alt=""
+        />
+      </div>
+    </section>
     <!-- Sección de Ubicación -->
     <section class="ubication-section" id="ubicacion">
       <div>
@@ -221,32 +247,6 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-      </div>
-    </section>
-    <!-- Sección de Contacto -->
-    <section id="contacto" class="contact-section">
-      <div class="flex justify-center items-center">
-        <img
-          width="200"
-          height="200"
-          class="object-contain"
-          src="/img/facebook (1).png"
-          alt=""
-        />
-        <img
-          width="200"
-          height="200"
-          class="object-contain"
-          src="/img/instagram.png"
-          alt=""
-        />
-        <img
-          width="200"
-          height="200"
-          class="object-contain"
-          src="/img/whatsapp (1).png"
-          alt=""
-        />
       </div>
     </section>
   </div>
