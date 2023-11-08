@@ -149,7 +149,7 @@
                 <input
                   type="text"
                   class="input-form"
-                  placeholder="correo electrónico"
+                  placeholder="Correo electrónico"
                 />
               </div>
               <div class="w-full mx-3">
@@ -210,8 +210,19 @@
         </div>
       </div>
     </section>
-    <section id="ubicacion"></section>
-    <section id="contacto"></section>
+    <!-- Sección de Ubicación -->
+    <section class="ubication-section" id="ubicacion">
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.0478656864366!2d-74.09791182418685!3d4.585430942644326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99679b547ca3%3A0x5402eb25493f6111!2sDentofaciall%20Odontolog%C3%ADa%20Especializada!5e0!3m2!1ses!2sco!4v1699456812021!5m2!1ses!2sco"
+          height="700"
+          width="1000"
+          style="border: 0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -240,5 +251,8 @@
     border-radius: 40px;
     background: #0ea8dc;
   }
+}
+.ubication-section {
+  @apply flex justify-center items-center p-3;
 }
 </style>
