@@ -2,19 +2,25 @@
   <div>
     <!-- Nosotros -->
     <section id="nosotros" class="about-section">
-      <div class="flex flex-col gap-6 px-10 justify-center items-center w-1/2">
-        <h1 class="text-5xl">
-          Encabezado sobre la transformación que brinda tu producto
+      <div
+        class="flex flex-col bg-success gap-6 px-10 justify-center items-center w-1/2"
+      >
+        <h1 class="text-5xl font-extrabold text-center">
+          Odontología especializada en una experiencia placentera y de primera
+          calidad, orientada a preservar y rehabilitar tu salud oral y la de tu
+          familia
         </h1>
         <br />
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis optio
-          dolorum illum nobis, minima deserunt possimus cum velit quod
-          voluptatum eius, cupiditate dolorem eaque ipsum impedit magnam aut
-          nisi molestiae.
+          En Dentofaciall, contamos con un prestigioso equipo de especialistas
+          en todas las áreas de la odontología, altamente calificado, idóneo y
+          competitivo.
         </p>
 
-        <a href="/" class="flex items-center border rounded-full p-4 uppercase">
+        <a
+          href="/"
+          class="flex items-center bg-primary text-white font-bold border rounded-full hover:bg-blue-900 p-4 uppercase"
+        >
           Pide tu valoración gratuita
         </a>
       </div>
