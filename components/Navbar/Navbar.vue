@@ -1,14 +1,14 @@
 <template>
   <nav
-    class="fixed w-full flex items-center justify-between px-16 pt-6 bg-white p-2 max-lg:px-4"
+    class="fixed w-full flex items-center justify-between px-16 pt-6 bg-white p-2 max-lg:px-4 shadow-md"
   >
     <!-- Imagen de logo  -->
     <nuxt-link to="/">
       <img
-        width="100"
-        height="100"
+        width="125"
+        height="125"
         class="object-contain"
-        src="/img/logo1.png"
+        src="/img/logo (3).png"
         alt=""
       />
     </nuxt-link>
@@ -24,9 +24,8 @@
       <nuxt-link class="subnavlink" to="#nosotros">Nosotros</nuxt-link>
       <nuxt-link class="subnavlink" to="#servicios">Servicios</nuxt-link>
       <nuxt-link class="subnavlink" to="#testimonios">Testimonios</nuxt-link>
-      <nuxt-link class="subnavlink" to="#citas">Citas</nuxt-link>
-      <nuxt-link class="subnavlink" to="#ubicación">Ubicación</nuxt-link>
-      <nuxt-link class="subnavlink" to="#contacto">Contacto</nuxt-link>
+      <nuxt-link class="subnavlink" to="#citas">Citas y Contacto</nuxt-link>
+      <nuxt-link class="subnavlink" to="#contacto">Ubicación</nuxt-link>
     </div>
 
     <!-- Botón navegador para pantallas pequeñas (adaptación de la imagen sin pixelar:object-cover-->
@@ -47,7 +46,7 @@
     <a
       href="https://api.whatsapp.com/send?phone=573137256806"
       target="_blank"
-      class="flex items-center border gap-4 text-[#4a5568] uppercase rounded-full p-2 max-lg:hidden"
+      class="btn-wp"
     >
       <img
         width="30"
@@ -74,7 +73,11 @@ onMounted(() => {
 </script>
 <style lang="scss">
 .subnavlink {
-  @apply uppercase text-[#4a5568];
+  @apply uppercase text-[#4a5568] hover:text-primary;
+
+  /* Para cuando queremos utilizar css puro &:hover {
+
+  }*/
 }
 .menu-responsive {
   position: fixed;
@@ -93,5 +96,8 @@ onMounted(() => {
     top: 1rem;
     right: 1rem;
   }
+}
+.btn-wp {
+  @apply flex items-center border gap-4 text-letters uppercase rounded-full  p-2 max-lg:hidden hover:text-primary hover:border-primary;
 }
 </style>

@@ -11,9 +11,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#0ea8dc",
-        success: "#5ea88b",
+        primary: "#3d81c5",
+        success: "#c1dd30 ",
         info: "#bce8e7",
+        letters: "#4a5568",
       },
     },
     fontFamily: {

@@ -2,10 +2,10 @@
   <footer class="flex justify-center items-center mx-auto gap-4">
     <div class="footer">
       <img
-        width="100"
-        height="100"
+        width="125"
+        height="125"
         class="object-contain"
-        src="/img/logo1.png"
+        src="/img/logo (3).png"
         alt=""
       />
       <p>
