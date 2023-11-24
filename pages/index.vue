@@ -31,68 +31,43 @@
     <!-- Servicios -->
 
     <section id="servicios" class="services-section">
-      <h1 class="flex justify-center text-5xl">Nuestros Servicios</h1>
+      <h1 class="flex justify-center text-5xl font-semibold">
+        Nuestros Servicios
+      </h1>
       <div class="items-center grid grid-cols-3 gap-4 p-10">
-        <div class="services-div">
-          <img width="50" height="50" src="/img/icons/diente.png" />
-          <h1>Servicio 1</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            incidunt repellendus sequi, animi dolorem quam. Aliquid, enim!
-            Laborum, praesentium earum eaque dolore a voluptate, illum, repellat
-            velit quo quae exercitationem.
-          </p>
-        </div>
-        <div class="services-div">
-          <img width="50" height="50" src="/img/icons/diente.png" />
-          <h1>Servicio 1</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            incidunt repellendus sequi, animi dolorem quam. Aliquid, enim!
-            Laborum, praesentium earum eaque dolore a voluptate, illum, repellat
-            velit quo quae exercitationem.
-          </p>
-        </div>
-        <div class="services-div">
-          <img width="50" height="50" src="/img/icons/diente.png" />
-          <h1>Servicio 1</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            incidunt repellendus sequi, animi dolorem quam. Aliquid, enim!
-            Laborum, praesentium earum eaque dolore a voluptate, illum, repellat
-            velit quo quae exercitationem.
-          </p>
-        </div>
-        <div class="services-div">
-          <img width="50" height="50" src="/img/icons/diente.png" />
-          <h1>Servicio 1</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            incidunt repellendus sequi, animi dolorem quam. Aliquid, enim!
-            Laborum, praesentium earum eaque dolore a voluptate, illum, repellat
-            velit quo quae exercitationem.
-          </p>
-        </div>
-        <div class="services-div">
-          <img width="50" height="50" src="/img/icons/diente.png" />
-          <h1>Servicio 1</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            incidunt repellendus sequi, animi dolorem quam. Aliquid, enim!
-            Laborum, praesentium earum eaque dolore a voluptate, illum, repellat
-            velit quo quae exercitationem.
-          </p>
-        </div>
-        <div class="services-div">
-          <img width="50" height="50" src="/img/icons/diente.png" />
-          <h1>Servicio 1</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            incidunt repellendus sequi, animi dolorem quam. Aliquid, enim!
-            Laborum, praesentium earum eaque dolore a voluptate, illum, repellat
-            velit quo quae exercitationem.
-          </p>
-        </div>
+        <HomeServices
+          img="/img/ortodoncia.webp"
+          title="Ortodoncia"
+          paragraph="La ortodoncia corrige los defectos de la posición dental para
+            mantener una boca perfecta y sana. En las clínicas dentales Dentix,
+            somos especialistas en ortodoncia y realizamos diferentes tipos de
+            tratamientos para adaptarnos a tus necesidades."
+        />
+        <HomeServices
+          img="/img/rehabilitacion.webp"
+          title="Rehabilitación oral"
+          paragraph="Es de la odontología, la especialidad que como su nombre lo indica, se encarga de “habilitar” o devolver la función y estética de algunas o todas las piezas dentales ausentes o en mal estado."
+        />
+        <HomeServices
+          img="/img/limpieza.webp"
+          title="Limpieza dental"
+          paragraph="La limpieza dental más conocida como profilaxis tiene diferentes funciones como proteger el esmalte y eliminar lo acumulado en los dientes y debajo de las encías, a lo que le llamamos placa dental."
+        />
+        <HomeServices
+          img="/img/cordales.jpg"
+          title="Extracción de cordales"
+          paragraph="La cirugía de cordales es una intervención simple, mínimamente invasiva y casi indolora que se lleva a cabo para extraer las muelas del juicio (también denominadas cordales). La técnica quirúrgica consiste en anestesiar, con anestésico local, la zona periférica de la pieza a extraer."
+        />
+        <HomeServices
+          img="/img/toxina.jpg"
+          title="Tóxina Butulínica"
+          paragraph="La cirugía de cordales es una intervención simple, mínimamente invasiva y casi indolora que se lleva a cabo para extraer las muelas del juicio (también denominadas cordales). La técnica quirúrgica consiste en anestesiar, con anestésico local, la zona periférica de la pieza a extraer."
+        />
+        <HomeServices
+          img="/img/botox.jpg"
+          title="Apicación de Botox"
+          paragraph="La cirugía de cordales es una intervención simple, mínimamente invasiva y casi indolora que se lleva a cabo para extraer las muelas del juicio (también denominadas cordales). La técnica quirúrgica consiste en anestesiar, con anestésico local, la zona periférica de la pieza a extraer."
+        />
       </div>
     </section>
     <!-- Testimonios-->
@@ -265,8 +240,11 @@
 .services-section {
   @apply justify-center items-center py-20;
 }
+.img-services {
+  @apply object-cover items-center rounded-full;
+}
 .services-div {
-  @apply flex flex-col items-center hover:border p-10;
+  @apply flex flex-col items-center hover:border gap-4 p-10;
 }
 .testimonial-section {
   @apply justify-center items-center p-10;
@@ -282,8 +260,6 @@
     padding: 10px 20px;
     border-radius: 40px;
     background: #0ea8dc;
-  }
-  .img {
   }
 }
 .ubication-section {
