@@ -17,12 +17,12 @@
           competitivo.
         </p>
 
-        <a
+        <NuxtLink
           href="/"
           class="flex items-center bg-primary text-white font-bold border rounded-full hover:bg-blue-900 p-4 uppercase"
         >
           Pide tu valoración gratuita
-        </a>
+        </NuxtLink>
       </div>
       <div class="flex justify-center items-center w-1/2">
         <img class="w-full object-contain" src="/img/sonrisa.png" alt="" />
@@ -31,7 +31,9 @@
     <!-- Servicios -->
 
     <section id="servicios" class="services-section">
-      <h1 class="flex justify-center text-5xl font-semibold">
+      <h1
+        class="flex justify-center text-4xl uppercase text-letters font-semibold"
+      >
         Nuestros Servicios
       </h1>
       <div class="items-center grid grid-cols-3 gap-4 p-10">
@@ -73,43 +75,51 @@
     <!-- Testimonios-->
 
     <section id="testimonios" class="testimonial-section">
+      <h1
+        class="flex justify-center text-4xl uppercase text-letters font-semibold m-11"
+      >
+        Testimonios de nuestros clientes
+      </h1>
       <HomeTestimonial
-        title="Testimonio 1"
-        paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            incidunt repellendus sequi, animi dolorem quam. Aliquid, enim!
-            Laborum, praesentium earum eaque dolore a voluptate, illum, repellat
-            velit quo quae exercitationem."
-        img="/img/testimonio1.png"
+        title="Doris Silva"
+        paragraph="“Estoy muy contenta porque yo no veía solución. Hay gente que dice que Marlon Becerra es solo fama, pero yo te puedo decir que no es fama es profesionalismo.”"
+        img="/img/testimonio1.jpg"
       />
-      <div class="flex justify-center items-center gap-4 p-6">
+      <div class="flex justify-center items-center gap-4 p-6 mb-14">
         <div class="w-1/4">
-          <img src="/img/testimonio1.png" alt="" />
+          <img
+            width="300"
+            height="300"
+            class="rounded-full"
+            src="/img/testimonio2.jpg"
+            alt=""
+          />
         </div>
-        <div class="w-1/2">
-          <h1 class="flex justify-center text-6xl">Testimonio 2</h1>
+        <div
+          class="w-1/2 p-6 border-2 rounded-full border-success shadow-lg hover:bg-success"
+        >
+          <h1 class="flex justify-center text-4xl font-bold">Carlos Niño</h1>
           <p class="flex justify-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            incidunt repellendus sequi, animi dolorem quam. Aliquid, enim!
-            Laborum, praesentium earum eaque dolore a voluptate, illum, repellat
-            velit quo quae exercitationem." img="/img/testimonio1.png
+            “He mejorado muchísimo porque puedo sonreír con mayor tranquilidad,
+            puedo hablar, cantar, todo lo que implica interactuar con otras
+            personas. A mí siempre que me preguntan por procedimientos
+            odontológicos, hablo de Marlon Becerra porque Siempre lleva las
+            cosas a la Perfección”.
           </p>
         </div>
       </div>
 
       <HomeTestimonial
-        title="Testimonio 3"
-        paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            incidunt repellendus sequi, animi dolorem quam. Aliquid, enim!
-            Laborum, praesentium earum eaque dolore a voluptate, illum, repellat
-            velit quo quae exercitationem."
-        img="/img/testimonio1.png"
+        title="Alison Páez"
+        paragraph="“Siempre había sido acomplejada porque me quitaron un colmillo ¡Literalmente me dejaron mueca! Al llegar acá me sorprendí, me sentí como en casa, siento que es un lugar para crearle una nueva vida a las personas. Llegar a Marlon Becerra me cambió la vida.”"
+        img="/img/testimonio3.jpg"
       />
-      <a
+      <NuxtLink
         href="/"
-        class="flex justify-center items-center border rounded-full p-4 uppercase w-1/4"
+        class="flex justify-center items-center text-white font-bold border rounded-full p-4 uppercase w-1/5 bg-primary hover:bg-blue-900"
       >
         Ver más testimonios
-      </a>
+      </NuxtLink>
     </section>
 
     <!-- Contacto y citas -->
